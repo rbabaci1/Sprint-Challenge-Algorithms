@@ -10,14 +10,11 @@ def count_th(word):
         if len(word) <= 1:
             return count
         if len(word) == 2 and word == "th":
-            count += 1
-            return count
+            return count + 1
         else:
             if word[0] == "t" and word[1] == "h":
                 count += 1
-
             return recurse(word[1:], count)
-        # return count
 
     return recurse(word)
 
