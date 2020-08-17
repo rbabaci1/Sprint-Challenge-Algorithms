@@ -1,6 +1,3 @@
-from math import pow
-
-
 class SortingRobot:
     def __init__(self, l):
         """
